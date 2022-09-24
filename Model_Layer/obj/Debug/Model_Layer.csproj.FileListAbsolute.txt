@@ -1,0 +1,12 @@
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\bin\Debug\Model_Layer.dll.config
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\bin\Debug\Model_Layer.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\bin\Debug\Model_Layer.pdb
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\bin\Debug\EntityFramework.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\bin\Debug\EntityFramework.xml
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\obj\Debug\Model_Layer.csproj.AssemblyReference.cache
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\obj\Debug\Model_Layer.csproj.CoreCompileInputs.cache
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\obj\Debug\Model_Layer.csproj.CopyComplete
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\obj\Debug\Model_Layer.dll
+D:\Belgelerim\yazılım\Murat Yücedağ Eğitim\projects\LibraryProjectWithRepositoryAndUnitOfWorkPattern\Model_Layer\obj\Debug\Model_Layer.pdb

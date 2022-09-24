@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+@using Model_Layer;
+@model List<Kategori>
+<br />
+<div class="container">
+    <h1 style="color:red; margin-left:37%;">Kategoriler</h1>
+    <br />
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Kitap Sayısı</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+
+            </tr>
+        </thead>
+
+       
+    <tbody>
+        @foreach (var item in Model)
+         {
+            <tr>
+                <td>@item.Ad</td>
+                <td>@item.Kitaplar.Count()</td>
+                <td><button class="guncelle btn btn-custom" value="@item.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@item.Id">Sil</button></td>
+                <td></td>
+            </tr>
+         }
+
+    </tbody>
+
+
+
+        <tfoot>
+            <tr>
+                <th>Ad</th>
+                <th>Kitap Sayısı</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

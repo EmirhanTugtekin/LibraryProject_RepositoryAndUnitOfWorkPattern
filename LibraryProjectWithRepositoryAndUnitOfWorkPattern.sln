@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Layer", "UI_Layer\UI_Layer.csproj", "{CADDB78E-DA0D-4428-85FF-26ABEA57E457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data_Layer", "Data_Layer\Data_Layer.csproj", "{936DBEC1-619F-43F7-8275-E14BBB5D9768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model_Layer", "Model_Layer\Model_Layer.csproj", "{8E60C122-7B54-475C-9133-527934E52EB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CADDB78E-DA0D-4428-85FF-26ABEA57E457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADDB78E-DA0D-4428-85FF-26ABEA57E457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADDB78E-DA0D-4428-85FF-26ABEA57E457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADDB78E-DA0D-4428-85FF-26ABEA57E457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936DBEC1-619F-43F7-8275-E14BBB5D9768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936DBEC1-619F-43F7-8275-E14BBB5D9768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936DBEC1-619F-43F7-8275-E14BBB5D9768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936DBEC1-619F-43F7-8275-E14BBB5D9768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E60C122-7B54-475C-9133-527934E52EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E60C122-7B54-475C-9133-527934E52EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E60C122-7B54-475C-9133-527934E52EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E60C122-7B54-475C-9133-527934E52EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7588650-8D5C-43EE-8161-702A0FF4E0F0}
+	EndGlobalSection
+EndGlobal
