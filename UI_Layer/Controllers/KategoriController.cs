@@ -24,5 +24,23 @@ namespace UI_Layer.Controllers
             var kategoriler = unitOfWork.GetRepo<Kategori>().GetAll();
             return View(kategoriler);
         }
+        [HttpPost]
+        public JsonResult EkleJson(string ktgAd)
+        {
+            Kategori ktgri = new Kategori();
+            ktgri.Ad = ktgAd; 
+            var eklenenKtg = unitOfWork.GetRepo<Kategori>().Add(ktgri);
+            unitOfWork.SaveChanges();
+            return Json(
+                new
+                {
+                    Result = new
+                    {
+                        Id = eklenenKtg.Id,
+                        Ad = eklenenKtg.Ad
+                    },
+                    JsonRequestBehavior.AllowGet
+                });
+        }
     }
 }

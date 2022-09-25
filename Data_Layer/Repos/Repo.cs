@@ -19,20 +19,21 @@ namespace Data_Layer
             _dbSet = _context.Set<T>();
         }
 
-        public void Add(T entity)
+        public T Add(T entity)
         {
-            _dbSet.Add(entity);
+            return _dbSet.Add(entity);
         }
 
-        public void Update(T entity)
+        public T Update(T entity)
         {
             _dbSet.Attach(entity);
             _context.Entry(entity).State= EntityState.Modified;
+            return entity;
         }
 
-        public void Delete(T entity)
+        public T Delete(T entity)
         {
-            _dbSet.Remove(entity);
+            return _dbSet.Remove(entity);
         }
 
         public void Delete(int id)

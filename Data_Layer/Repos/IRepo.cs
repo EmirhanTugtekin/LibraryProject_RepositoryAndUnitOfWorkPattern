@@ -14,9 +14,9 @@ namespace Data_Layer
         T GetById(int id);
         T Get(Expression<Func<T, bool>> predicate); 
 
-        void Add(T entity);
-        void Update(T entity);
-        void Delete(T entity);
+        T Add(T entity);
+        T Update(T entity);
+        T Delete(T entity);
         void Delete(int id);
     }
 }

@@ -146,6 +146,7 @@
     <Content Include="Content\images\sort_desc.png" />
     <Content Include="Content\images\sort_desc_disabled.png" />
     <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\sweetalert2.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -157,7 +158,9 @@
     <Content Include="Scripts\dataTables.buttons.min.js" />
     <Content Include="Scripts\jquery.dataTables.min.js" />
     <Content Include="Scripts\jszip.min.js" />
+    <Content Include="Scripts\Main.js" />
     <Content Include="Scripts\pdfmake.min.js" />
+    <Content Include="Scripts\sweetalert2.min.js" />
     <Content Include="Scripts\vfs_fonts.js" />
     <Content Include="web\about.html" />
     <Content Include="web\blog1.html" />
