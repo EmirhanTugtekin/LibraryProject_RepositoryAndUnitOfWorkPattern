@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -109,7 +108,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="@Url.Action("Index","Kategori")">Listele</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item kategoriEkle" href="javascript:void(0)">Ekle</a>
+                                <a id="ktgEkle" class="dropdown-item" href="javascript:void(0)">Ekle</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Yazarlar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="@Url.Action("Index","Yazar")">Listele</a>
+                                <div class="dropdown-divider"></div>
+                                <a id="yazarEkle" class="dropdown-item" href="javascript:void(0)">Ekle</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -122,11 +132,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#"></a>
-                                <a class="dropdown-item" href="#">Listeler</a>
+                                <a class="dropdown-item" href="/Kitap/Index/">Listeler</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Ekle</a>
+                                <a class="dropdown-item" href="/Kitap/Ekle/">Ekle</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Ödünç Alınan</a>
+                                <a class="dropdown-item" href="/Kitap/Odunc/">Ödünç Alınan</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown active">
@@ -212,6 +222,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="~/Scripts/buttons.html5.min.js"></script>
     <script src="~/Scripts/buttons.print.min.js"></script>
     <script src="~/Scripts/Main.js"></script>
+    <script src="~/Scripts/sweetalert2.min.js"></script>
     <script>
         $(document).ready(function () {
             // Setup - add a text input to each footer cell
@@ -228,11 +239,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         'copy', 'csv', 'excel', 'pdf', 'print'
                     ]
                 });
-            
+
             });
         });
     </script>
-    
+
 
 </body>
 

@@ -1,0 +1,65 @@
+﻿
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+    string kategoriler = ""; 
+}
+
+@using Model_Layer;
+@model List<Kitap>
+<br />
+<div class="container">
+    <h1 style="color:red; margin-left:37%;">Kitaplar</h1>
+    <br />
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Sıra No</th>
+                <th>Kategori</th>
+                <th>Ad</th>
+                <th>Adet</th>
+                <th>Yazar</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+
+            </tr>
+        </thead>
+
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.SiraNo</td>
+                    <td>
+                        @foreach(var kategori in item.Kategoriler)
+                        {
+                            kategoriler += kategori.Ad + "";
+                        }
+                        @kategoriler
+                    </td>
+                    <td>@item.Ad</td>
+                    <td>@item.Adet</td>
+                    <td>@item.KitapYazar.Ad</td>
+                    <td><button class="guncelle btn btn-custom" value="@item.Id">Güncelle</button></td>
+                    <td><button class="sil btn btn-danger" value="@item.Id">Sil</button></td>
+                    <td></td>
+                </tr>
+            }
+
+        </tbody>
+
+
+
+        <tfoot>
+            <tr>
+                <th>Sıra No</th>
+                <th>Kategori</th>
+                <th>Ad</th>
+                <th>Adet</th>
+                <th>Yazar</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

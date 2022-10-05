@@ -129,6 +129,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\KitapController.cs" />
+    <Compile Include="Controllers\YazarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -257,6 +259,9 @@
     <Content Include="web\webfonts\fa-solid-900.ttf" />
     <Content Include="web\webfonts\fa-solid-900.woff" />
     <Content Include="web\webfonts\fa-solid-900.woff2" />
+    <Content Include="Views\Yazar\Index.cshtml" />
+    <Content Include="Views\Kitap\Index.cshtml" />
+    <Content Include="Views\Kitap\Ekle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

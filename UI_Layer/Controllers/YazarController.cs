@@ -5,56 +5,56 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.UI.WebControls;
 
 namespace UI_Layer.Controllers
 {
-    public class KategoriController : Controller
+    public class YazarController : Controller
     {
-        // GET: Kategori
+        // GET: Yazar
         UnitOfWork unitOfWork;
 
-        public KategoriController()
+        public YazarController()
         {
             unitOfWork = new UnitOfWork();
         }
 
         public ActionResult Index()
         {
-            var kategoriler = unitOfWork.GetRepo<Kategori>().GetAll();
-            return View(kategoriler);
+            var yazarlar = unitOfWork.GetRepo<Yazar>().GetAll();
+            return View(yazarlar);
         }
+
         [HttpPost]
-        public JsonResult EkleJson(string ktgAd)
+        public JsonResult EkleJson(string yzrAd)
         {
-            Kategori ktgri = new Kategori();
-            ktgri.Ad = ktgAd; 
-            var eklenenKtg = unitOfWork.GetRepo<Kategori>().Add(ktgri);
+            Yazar yzr = new Yazar();
+            yzr.Ad = yzrAd;
+            var eklenenYazar = unitOfWork.GetRepo<Yazar>().Add(yzr);
             unitOfWork.SaveChanges();
             return Json(
                 new
                 {
                     Result = new
                     {
-                        Id = eklenenKtg.Id,
-                        Ad = eklenenKtg.Ad
+                        Id = eklenenYazar.Id,
+                        Ad = eklenenYazar.Ad
                     },
                     JsonRequestBehavior.AllowGet
                 });
         }
         [HttpPost]
-        public JsonResult GuncelleJson(int ktgId,string ktgAd)
+        public JsonResult GuncelleJson(int yzrId, string yzrAd)
         {
-            var kategori = unitOfWork.GetRepo<Kategori>().GetById(ktgId);
-            kategori.Ad = ktgAd;
+            var yazar = unitOfWork.GetRepo<Yazar>().GetById(yzrId);
+            yazar.Ad = yzrAd;
             var durum = unitOfWork.SaveChanges();
             if (durum > 0) return Json("1");
             return Json("0");
         }
         [HttpPost]
-        public JsonResult SilJson(int ktgId)
+        public JsonResult SilJson(int yzrId)
         {
-            unitOfWork.GetRepo<Kategori>().Delete(ktgId);
+            unitOfWork.GetRepo<Yazar>().Delete(yzrId);
             var durum = unitOfWork.SaveChanges();
             if (durum > 0) return Json("1");
             return Json("0");
